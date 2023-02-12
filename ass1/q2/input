@@ -1,0 +1,14 @@
+!scheme: euler = 0, rk4 = 1, ab2 = 2
+2
+
+!initial condition x0
+1.0
+
+!initial time
+0.0
+
+!final time
+2.0 
+
+!time step dt 0.5, 0.25, 0.125, 0.0625 and 0.03125
+0.03125

@@ -1,0 +1,11 @@
+!initial condition y0
+0.0
+
+!initial x
+0.0
+
+!final x
+2.0
+
+!step size dx
+1.0e-3

@@ -1,0 +1,27 @@
+!mass m
+20
+
+!damping c
+5
+
+!stiffness k
+20
+
+!initial time
+0
+
+!final time
+15
+
+!time step
+0.0625
+
+!initial position
+1
+
+!initial velocity
+0
+
+
+
+
