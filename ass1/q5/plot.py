@@ -13,7 +13,7 @@ for source, color in zip(source_values, colors):
 ax.set_xlabel(r'$r$')
 ax.set_ylabel(r'$T$')
 ax.legend()
-ax.set_title(r'Plot $T(r)$ for different source')
+ax.set_title(r'Plot $T(r)$ for different sources')
 
 plt.savefig('plot.png', dpi=500)
 plt.clf()
