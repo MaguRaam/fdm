@@ -1,0 +1,5 @@
+create data/ and plot/ directory
+compile the code using make
+run the code using ./diffusion
+plot images using python3 plot.py
+plot animation using animate.py

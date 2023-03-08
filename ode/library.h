@@ -9,6 +9,24 @@
 #include <cmath>
 #include <numeric>
 
+
+// Tridiagonal matrix solver
+
+// Solution of a tridiagonal system. Diagonal elements are d, a is to the right of diagonal and b is 
+// to the left. C denotes the right hand side. U is the final solution. Note that values of d and C are
+// overwritten inside the loop.
+void thomas(std::vector<scalar>& b,std::vector<scalar>& d,std::vector<scalar>& a,std::vector<scalar>& C, std::vector<scalar>& u,int n){
+	
+	int i;
+
+	for( int i = 1 ; i < n ; i++) {
+		d[i] = d[i] - b[i]*(a[i-1]/d[i-1]);
+		C[i] = C[i] - b[i]*(C[i-1]/d[i-1]);
+	}
+	u[n-1] = C[n-1]/d[n-1];
+	for(i = n-2;i>=0;i--) u[i] = ( C[i]-a[i]*u[i+1])/d[i];
+}
+
 // ODE solvers:
 
 //!Note: The ODE solvers take input as a function of the form f(y, t):

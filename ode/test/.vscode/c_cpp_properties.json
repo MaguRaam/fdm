@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "~/libray/eigen/**"
+                "/home/magu/library/armadillo-11.4.4/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

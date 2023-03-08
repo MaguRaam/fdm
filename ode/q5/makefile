@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -O3 -std=c++17
-TARGET = heat
+TARGET = thomas
 INCLUDE = -I ../ -I ~/library/eigen
 
 $(TARGET) : $(TARGET).cpp
