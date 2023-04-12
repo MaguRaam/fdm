@@ -17,4 +17,4 @@ clean:
 	@rm -f $(OBJ) $(EXEC)
 
 distclean: clean
-	@rm -f data/* plot/*
+	@rm -f data/* plot/* *.dat

@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 data_dir = 'data'
 
 # Get a list of the data files
-data_files = sorted(os.listdir(data_dir))
+data_files = sorted([f for f in os.listdir(data_dir) if f.endswith('.dat')])
+
 
 # Set plot settings
 plt.rcParams['font.size'] = 12
@@ -15,6 +16,7 @@ plt.rcParams['lines.linewidth'] = 2.0
 
 # Loop over the data files and plot each one
 for i, data_file in enumerate(data_files):
+    
     # Load the data from the file
     data = np.loadtxt(os.path.join(data_dir, data_file))
 
